@@ -232,32 +232,35 @@ nav ul li .aDuNav{
     font-size: 15px;
     text-align: center;
     width: 100px;
+    margin-bottom: 0;
 }
 .form .lien{
     font-size: 15px;
     width: 100px;
+    margin-right: 0;
     margin-left: 49px;
+    
 }
 
 .liw{
     text-align: center;
-    margin-top: -20px;
-    width: 100px;
+    padding-left: 0;
+    /* margin-top: -15px; */
+    width: 85px;
 }
-
 
 .icons a{
     text-decoration: none;
     color: #fff;
 }
-.icons i{
+.icons ion-icon{
     color: #fff;
     font-size: 25px;
     padding-left: 14px;
     margin-top: -10px;
     transition: 0.3s ease;
 }
-.icons i:hover{
+.icons ion-icon:hover{
     color: #00796b;
 }
 
@@ -276,15 +279,11 @@ nav ul li .aDuNav{
   animation-delay: 2s;
 }
 
-.divP {
-    margin: 10px 0; 
-    margin-left: 35px;
+.divP{
+    margin:10px 0 30px 35px;
     align-items: center;
     width: 200px;
-    height: 80px;
-    // margin:10px 0 30px 35px;
 }
-
 
 .content .form .divP.anim p{
     align-items: center;

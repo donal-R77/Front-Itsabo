@@ -8,18 +8,29 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { Routes,RouterModule } from '@angular/router';
 import { DiagnosticComponent } from './pages/diagnostic/diagnostic.component';
 
-const routes : Routes = [
+const routes: Routes = [
   {
-    path:'register',component:RegisterComponent,
+    path: 'login',
+    component: LoginComponent,
   },
   {
-    path:'home-page', component:HomePageComponent,
+    path: 'home-page',
+    component: HomePageComponent,
   },
   {
-    path:'diagnostic', component:DiagnosticComponent
+    path: 'diagnostic',
+    component: DiagnosticComponent,
   },
-  {path:'',component:LoginComponent}
-]
+  {
+    path: 'register',
+    component: RegisterComponent,
+  },
+  {
+    path: '',
+    redirectTo: '/home-page', // Redirige la route vide vers 'home-page'
+    pathMatch: 'full', // Assure une redirection complète
+  },
+];
 
 @NgModule({
   declarations: [
